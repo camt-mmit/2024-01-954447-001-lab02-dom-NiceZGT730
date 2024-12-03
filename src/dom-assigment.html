@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:op
+sz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./css/material.css" />
+    <link rel="stylesheet" href="./css/dom.css" />
+    <title>DOM : Addable</title>
+    <script type="module" src="./js/dom-assignment.js"></script>
+  </head>
+  <body>
+    <main class="app-cmp-main">
+      <div>
+        <button
+          type="button"
+          class="app-cl-cmd app-cmp-add-section app-cl-primary"
+        >
+          <i class="material-symbols-outlined">add</i>
+          ADD SECTION
+        </button>
+      </div>
+
+      <section class="app-cmp-section">
+        <div>
+          <button
+            type="button"
+            class="app-cl-cmd app-cmp-add-input app-cl-primary"
+          >
+            <i class="material-symbols-outlined">add</i>
+            ADD
+          </button>
+          <span class="app-cmp-section-title">Section 1</span>
+          <button
+            type="button"
+            class="app-cl-cmd app-cmp-remove-section app-cl-warn"
+          >
+            <i class="material-symbols-outlined">delete_forever</i>
+            REMOVE SECTION
+          </button>
+        </div>
+        <div class="app-cmp-input-list">
+          <template class="app-templ-input">
+            <div class="app-cmp-input">
+              <label for="">
+                <b class="app-cmp-input-title"
+                  >Number <span class="app-elem-input-title-no"></span
+                ></b>
+                <input type="number" value="0" class="app-elem-input" />
+              </label>
+              <button class="app-cl-cmd app-cmp-remove-input app-cl-warn">
+                <i class="material-symbols-outlined">delete_forever</i>
+              </button>
+            </div>
+          </template>
+        </div>
+        <div>
+          <label for="">
+            <b>Result</b>
+            <output class="app-elem-result">0</output>
+          </label>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
